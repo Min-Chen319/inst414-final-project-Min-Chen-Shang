@@ -10,7 +10,7 @@ def transform_data(data_dict):
     """
     import pandas as pd
 
-    print("🔧 Transforming datasets...")
+    print("Transforming datasets...")
 
     df_appointments = data_dict["appointments"].copy()
     df_cms = data_dict["cms"].copy()
@@ -27,9 +27,10 @@ def transform_data(data_dict):
     # Optional: drop or fill missing values
     df_appointments.dropna(subset=['lead_time', 'no_show'], inplace=True)
 
-    print("✅ Transform complete.")
+    print("Transform complete.")
 
     return {
         "appointments": df_appointments,
         "cms": df_cms
     }
+#

@@ -13,10 +13,10 @@ def evaluate_model(model, X_test, y_test):
         X_test: test features
         y_test: test target
     """
-    print("🔍 Evaluating model...")
+    print("Evaluating model...")
     y_pred = model.predict(X_test)
 
-    print("\n📋 Classification Report:")
+    print("\nClassification Report:")
     print(classification_report(y_test, y_pred))
 
     cm = confusion_matrix(y_test, y_pred)
@@ -26,3 +26,4 @@ def evaluate_model(model, X_test, y_test):
     plt.title("Confusion Matrix")
     plt.tight_layout()
     plt.show()
+#

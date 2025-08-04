@@ -11,7 +11,7 @@ def generate_visualizations(model, data_dict):
         model: trained model (not used yet)
         data_dict: dictionary containing cleaned 'appointments' and 'cms' DataFrames
     """
-    print("📊 Generating visualizations...")
+    print("Generating visualizations...")
 
     df = data_dict["appointments"]
 
@@ -33,3 +33,4 @@ def generate_visualizations(model, data_dict):
     plt.ylabel("Count")
     plt.tight_layout()
     plt.show()
+#

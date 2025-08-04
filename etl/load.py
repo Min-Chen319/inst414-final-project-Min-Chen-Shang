@@ -17,4 +17,5 @@ def load_data(data_dict):
     data_dict["appointments"].to_csv(appointments_path, index=False)
     data_dict["cms"].to_csv(cms_path, index=False)
 
-    print("📁 Clean data saved to data/processed/")
+    print("Clean data saved to data/processed/")
+#
